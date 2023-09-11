@@ -23,7 +23,13 @@ Na segunda etapa do projeto, a ênfase é na detecção de bolas de bocha em vá
 - **Contagem das Galinhas:** A contagem é feita utilizando o método findContours do OpenCV.
 
 ##### Etapa 2:
-- **Em desenvolvimento**
+- **Identificação de Bolas:** A aplicação é capaz de identificar bolas e circular sua área para as cores branco, azul e vermelho.
+- **Visualização das Etapas:** Após carregar a imagem, a aplicação executa mostrando na tela as seguintes etapas:
+    1. Aplica Threshold na imagem original e mostra o resultado;
+    2. Faz o contorno da única bola que sobrou com a aplicação do Threshold (branca);
+    3. Passa o filtro de adição na imagem com a bola branca identificada, somando com a imagem original novamente;
+    4. Aplica um Threshold Inverso e mais fraco que o primeiro, deixando na imagem apenas as 4 bolas restantes e o circulo da bola branca;
+    5. Mostra na tela o resultado com os 5 circulos ao redor das bolas.
 
 ## Dependências
 Siga essa ordem de instalação para ambos os sistemas operacionais, para garantir que não exista conflito de versões:
@@ -55,3 +61,11 @@ Imagem 2 - Teste em uma região com média intensidade de luz, com 2 galinhas pr
 PS.: Para regiões mais escuras da imagem, a aplicação tende a contar um número menor de galinhas.
 
 ##### Etapa 2:
+
+Imagem 1 - Etapas da aplicação demonstrando seu funcionamento da direita para a esquerda.
+![Imagem1](https://i.imgur.com/rStcN1u.png)
+
+Imagem 2 - Imagem resultante com os circulos ao redor das bolas de bocha, comparando com a imagem original.
+<p align="center">
+    <img src="https://i.imgur.com/zsPGJmG.jpg"><img src="https://i.imgur.com/22NkMao.jpg">
+</p>
