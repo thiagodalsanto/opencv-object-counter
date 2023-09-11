@@ -9,7 +9,7 @@ import os
 # Variáveis globais
 start_x, start_y, end_x, end_y = -1, -1, -1, -1
 selecting = False
-image_path = "galinha.png"
+image_path = "assets/galinha.png"
 roi = None
 
 # Função de callback para lidar com eventos de mouse
