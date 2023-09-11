@@ -41,7 +41,7 @@ def show_reg_of_image_window():
             channel = converted_image[:, :, 2]
             pink_image = cv2.applyColorMap(channel, cv2.COLORMAP_BONE)
 
-            _, thresholding = cv2.threshold(pink_image, 148, 255, cv2.THRESH_BINARY)
+            _, thresholding = cv2.threshold(pink_image, 108, 255, cv2.THRESH_BINARY_INV)
 
             gray2 = cv2.cvtColor(thresholding, cv2.COLOR_BGR2GRAY)
 
@@ -50,10 +50,10 @@ def show_reg_of_image_window():
             edges = cv2.Canny(binary_image, 100, 200)
 
             cv2.imshow("Etapa 1: ColorMap Bone", pink_image)
-            cv2.imshow("Etapa 2: Threshold (128)", thresholding)
+            cv2.imshow("Etapa 2: Threshold Inverso (108)", thresholding)
             cv2.imshow("Etapa 3: GreyTones 2", gray2)
-            cv2.imshow("Etapa 4: Threshold 2 (1)", binary_image)
-            cv2.imshow("Etapa 5: Canny (128, 200)", edges)
+            cv2.imshow("Etapa 4: Threshold 2 (128)", binary_image)
+            cv2.imshow("Etapa 5: Canny (100, 200)", edges)
 
             num_chicken = chicken_count.count_chicken(edges)
 
