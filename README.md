@@ -1,5 +1,9 @@
 ## OpenCV Object Counter
-Projeto desenvolvido utilizando Python e OpenCV, divido em duas etapas. A primeira, sendo representada pela identificação de quantas galinhas estão presentes em uma seleção da imagem. Enquanto, a segunda etapa refere-se a identificação de bolas de bocha, e contagem das mesmas.
+Este repositório contém um conjunto de scripts e recursos para a detecção de objetos utilizando a poderosa combinação de Python e OpenCV. O projeto é dividido em duas etapas distintas, cada uma focada na identificação de objetos específicos.
+
+Na primeira etapa, foi utilizado técnicas de processamento de imagem com OpenCV para identificar galinhas em imagens. As etapas incluem thresholding para segmentar a área de interesse das galinhas, Canny Edge Detection para realçar bordas importantes, blur para suavizar a imagem e remover ruídos, e Colormap "BONE" para uma representação visual mais clara.
+
+Na segunda etapa do projeto, a ênfase é na detecção de bolas de bocha em várias cores e geração de círculos ao redor delas. Isso é alcançado por meio de técnicas, incluindo combinação de imagens para criar imagens que realcem os objetos de interesse, thresholding para segmentar as bolas de bocha, e adição, subtração e multiplicação de imagem para criar máscaras precisas.
 
 ## Sobre o trabalho:
 
