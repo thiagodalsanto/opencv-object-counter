@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 
 # Carregar a imagem
-imagem = cv2.imread('assets/bocha.JPG')
+imagem = cv2.imread('../assets/bocha.JPG')
 
 # Inicializar a flag para controlar as etapas de detecção de círculos
 etapa_deteccao = 'threshold'
